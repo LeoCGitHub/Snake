@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Space Snake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="imagesUFO.png" />
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap-4.0.0/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="snakeCSS.css" />
+
+</head>
+
+<body>
+    <div id="titre">
+        <h1>Space Snake</h1>
+        <div id="manager">
+            <h2>Récupère ton équipage !!</h2>
+            <p id="text0">
+                Mode Easy : l'environnement n'a pas l'air hostile. <br>Mode Normal : des terriens trainent dans les
+                parages.<br>
+                Mode Hardcore : attention à la barrière d'astéroïdes. <br>Mode Legendary : attention à la barrière
+                d'astéroïdes et aux
+                Terriens.
+            </p>
+            <div id="btnmanager">
+                <div id="diffbtn">
+                    <button type="button" class="btn btn-success" id="btnE">Easy</button>
+                    <button type="button" class="btn btn-primary" id="btnN">Normal</button>
+                    <button type="button" class="btn btn-warning" id="btnH">Hardcore</button>
+                    <button type="button" class="btn btn-danger" id="btnL">Legendary</button>
+                </div>
+                <!-- <button type="button" class="btn btn-warning" id="btnS">Start</button> -->
+                <div id="buttontext">
+                    <input type="number" class="form-control" placeholder="12 par défaut" aria-label="vitesse"
+                        aria-describedby="basic-addon1" id="text1">
+                    <button type="button" class="btn btn-warning" id="btnV" type="submit" disabled="true">Vitesse</button>
+                </div>
+                <button type="button" class="btn btn-danger" id="btnR">Restart</button>
+            </div>
+        </div>
+    </div>
+    <div class="build-container">
+        <div class="row">
+            <div class="col-4" id="score0">
+                <h4>Rapport de mission</h1>
+                    <div id="score"></div>
+            </div>
+            <div class="col-8">
+                <canvas height="600px" width="600px" id="field" disabled="true"></canvas>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="bootstrap-4.0.0/dist/js/jQuery.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/popper.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="snakeTS.js"></script>
+</body>
+
+</html>
